@@ -42,7 +42,7 @@ label {
   font-weight: 600;
 }
 
-label input {
+input {
   width: 100%;
   border: 1px solid #d1d5db;
   border-radius: 0.25rem;
@@ -51,7 +51,7 @@ label input {
   font-size: 1rem;
 }
 
-label input:focus-visible {
+input:focus-visible {
   border-color: #6366f1;
 }
 

@@ -1,5 +1,8 @@
-var email = document.querySelector("#email");
-var senha = document.querySelector("#senha");
-var user = { email: email.target, senha: senha.target };
+var form = document.querySelector("#app");
 
-function run(event, )
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  var email = event.target.email.value;
+  var senha = event.target.senha.value;
+  alert(`Email: ${email}, Senha: ${senha}`);
+});
