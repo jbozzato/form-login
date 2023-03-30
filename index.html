@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de login</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="app.js" defer></script> -->
+  </head>
+  <body>
+    <form id="app">
+      <h1>Formulario de Login</h1>
+      <label for="email"> E-mail </label>
+      <input type="email" id="email" placeholder="email@dominio.com" />
+      <label for="senha"> Senha </label>
+      <input type="password" id="senha" placeholder="senha" />
+      <button type="submit">Entrar</button>
+    </form>
+    <script>
+      var form = document.querySelector("#app");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        var email = event.target.email.value;
+        var senha = event.target.senha.value;
+        console.log({ email, senha });
+      });
+    </script>
+  </body>
+</html>
